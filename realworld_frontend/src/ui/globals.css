@@ -1,0 +1,191 @@
+@import 'normalize.css';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+
+/* グローバルナビ用*/
+
+.navbar {
+  padding: 8px 16px;
+}
+
+.container {
+  max-width: 1140px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  color: #5CB85C;
+  font-size: 1.5rem;
+  margin-right: 2rem;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-right li:not(:first-child) {
+  margin-left: 20px;
+}
+
+/*
+TOPページ
+*/
+
+/* TOPページのバナーパート */
+
+.home-banner {
+  background-color: #5CB85C;
+  color: #fff;
+  padding: 2rem 0;
+  justify-content: center;
+  text-align: center;
+  padding: 32px;
+  width: 100%;
+}
+
+.home-banner h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  margin: 0;
+  padding: 0 0 0.5rem;
+}
+
+.home-banner p {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+
+.main_container {
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 20px 20px;
+}
+
+/* TOPページのブログ２カラム表示 */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 3.5fr 1fr;
+  gap: 20px;
+}
+
+/* TOPページのブログ表示ナビ */
+
+.home_nav_link {
+  padding: 20px;
+  border-bottom: solid 2px #5CB85C;
+  margin-bottom: 5px;
+}
+
+
+/* TOPページのブログ一覧 */
+/* .blog_wrapper {
+  padding-top: 100px;
+} */
+
+
+.blog_list_container {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 0;
+
+}
+
+.blog_list_container h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 0 3px;
+}
+
+.tag-list {
+  background-color: #f3f3f3;
+  padding: 5px 10px 10px 10px;
+  border-radius: 5px;
+}
+
+.tag-list p {
+  margin: 0 0 0.2rem;
+}
+
+.tag-list a {
+  font-size: 0.8rem;
+  background-color: #818a91;
+  padding: 0.3rem 0.6rem;
+  border-radius: 10rem;
+  color: #fff;
+  margin-right: 3px;
+  margin-bottom: 0.2rem;
+  display: inline-block;
+}
+
+.subject_style {
+  font-size: 1rem;
+  color: #999;
+  margin-bottom: 15px;
+  line-height: 1.3rem;
+}
+
+.blog_elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #999;
+  font-size: 0.8rem;
+  line-height: 2;
+}
+
+.blog_tags {
+  border: solid 1px #999;
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+
+/* ページネーション */
+.pagination {
+  display: flex;
+  margin-top: 20px;
+}
+
+.pagination li {
+  padding: 5px 10px;
+  border: 1px solid #5CB85C;
+  margin-right: 5px;
+}
